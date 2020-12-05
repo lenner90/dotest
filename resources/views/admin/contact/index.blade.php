@@ -15,9 +15,9 @@
                     <div class="align-self-center">
                         <h4>Contact Page</h4>
                     </div>
-                    <!-- <div>
+                    <div>
                         <a href="{{route('add.contact')}}"><button class="btn btn-info">Add Contact</button></a>
-                    </div> -->
+                    </div>
 
                 </div>
 

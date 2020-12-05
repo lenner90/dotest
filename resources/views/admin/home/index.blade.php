@@ -15,9 +15,9 @@
                     <div class="align-self-center">
                         <h4>Home About</h4>
                     </div>
-                    <!-- <div>
+                    <div>
                         <a href="{{route('add.about')}}"><button class="btn btn-info">Add About</button></a>
-                    </div> -->
+                    </div>
 
                 </div>
 
