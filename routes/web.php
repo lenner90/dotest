@@ -8,8 +8,10 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\TestimonialController;
 use App\Models\Brand;
 use App\Models\HomeAbout;
+use App\Models\Testimonial;
 /*
 
 |--------------------------------------------------------------------------
@@ -69,6 +71,15 @@ Route::post('/store/contact', [ContactController::class, 'StoreContact'])->name(
 Route::get('/contact/edit/{id}', [ContactController::class, 'EditContact']);
 Route::post('/update/contact/{id}', [ContactController::class, 'UpdateContact']);
 
+//Admin Testimonial page route
+Route::get('/admin/testimonial', [TestimonialController::class, 'AdminTestimonial'])->name('admin.testimonial');
+Route::get('/add/testimonial',[TestimonialController::class,'AddTestimonial'])->name('add.testimonial');
+Route::post('/store/testimonial', [TestimonialController::class, 'StoreTestimonial'])->name('store.testimonial');
+Route::get('/testimonial/edit/{id}',[TestimonialController::class,'EditTestimonial']);
+Route::post('/testimonial/update/{id}', [TestimonialController::class, 'UpdateTestimonial']);
+Route::get('/testimonial/delete/{id}',[TestimonialController::class,'DeleteTestimonial']);
+
+
 //Home  page client route
 Route::get('/contact', [ContactController::class, 'Contact'])->name('contact');
 Route::get('/services', [ContactController::class, 'Services'])->name('services');
@@ -76,6 +87,7 @@ Route::get('/portfolio', [ContactController::class, 'Portfolio'])->name('portfol
 Route::get('/aboutus', [ContactController::class, 'AboutUs'])->name('aboutus');
 Route::get('/team', [ContactController::class, 'Team'])->name('team');
 Route::get('/testimonia', [ContactController::class, 'Testimonia'])->name('testimonia');
+
 
 
 

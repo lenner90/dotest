@@ -68,6 +68,13 @@
                           </a>
                         </li>
 
+                        <li  class="active" >
+                          <a class="sidenav-item-link" href="{{route('admin.testimonial')}}">
+                            <span class="nav-text">Testimonial</span>
+                            
+                          </a>
+                        </li>
+
                       </div>
                     </ul>
                   </li>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Models\Testimonial;
 
 class ContactController extends Controller
 {
@@ -68,7 +69,8 @@ class ContactController extends Controller
     }
 
     public function Testimonia(){
-        return view('pages.testimonia');
+        $testimonials = Testimonial::all();
+        return view('pages.testimonia',compact('testimonials'));
     }
 
     

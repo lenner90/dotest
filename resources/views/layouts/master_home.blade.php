@@ -51,7 +51,7 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
 
-          <li class="drop-down"><a href="">About</a>
+          <!-- <li class="drop-down"><a href="">About</a>
             <ul>
               <li><a href="{{ route('aboutus') }}">About Us</a></li>
               <li><a href="{{ route('team') }}">Team</a></li>
@@ -66,10 +66,10 @@
                 </ul>
               </li>
             </ul>
-          </li>
-
-          <li><a href="{{ route('services') }}">Services</a></li>
-          <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+          </li> -->
+          <li><a href="{{ route('aboutus') }}">About Us</a></li>
+          <li><a href="{{ route('team') }}">Team</a></li>
+          <li><a href="{{ route('testimonia') }}">Testimonials</a></li>
           <!-- <li><a href="pricing.html">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li> -->
           <li><a href="{{ route('contact') }}">Contact</a></li>
