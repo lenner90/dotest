@@ -1,4 +1,4 @@
-@extends('layouts.master_home')
+@extends('layouts.master_home',['title' => 'home'])
 @include('layouts.body.slider')
 
 @section('home_content')
