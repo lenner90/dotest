@@ -1,4 +1,4 @@
-@extends('layouts.master_home')
+@extends('layouts.master_home',['title' => 'testimonial'])
 
 @section('home_content')
 

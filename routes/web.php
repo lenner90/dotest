@@ -12,6 +12,7 @@ use App\Http\Controllers\TestimonialController;
 use App\Models\Brand;
 use App\Models\HomeAbout;
 use App\Models\Testimonial;
+use App\Models\Slider;
 /*
 
 |--------------------------------------------------------------------------
@@ -92,7 +93,10 @@ Route::get('/testimonia', [ContactController::class, 'Testimonia'])->name('testi
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('admin.index');
+    // return view('admin.index');
+    $sliders = Slider::latest()->paginate(5);
+    return view('admin.slider.index',compact('sliders'));
 })->name('dashboard');
+
 
 Route::get('/user/logout',[BrandController::class,'Logout'])->name('user.logout');

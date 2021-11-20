@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BackAnt CMS Template - Index</title>
+  <title>Reading Bar CMS Template - Index</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,13 +43,13 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html"><span>Back</span>Ant</a></h1>
+      <h1 class="logo mr-auto"><a href="/"><span>Reading</span>Bar</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="{{$title =='home' ? 'active':''}}"><a href="/">Home</a></li>
 
           <!-- <li class="drop-down"><a href="">About</a>
             <ul>
@@ -67,12 +67,12 @@
               </li>
             </ul>
           </li> -->
-          <li><a href="{{ route('aboutus') }}">About Us</a></li>
-          <li><a href="{{ route('team') }}">Team</a></li>
-          <li><a href="{{ route('testimonia') }}">Testimonials</a></li>
+          <li class="{{$title =='aboutus' ? 'active':''}}"><a href="{{ route('aboutus') }}">About Us</a></li>
+          <li class="{{$title =='team' ? 'active':''}}"><a href="{{ route('team') }}">Team</a></li>
+          <li class="{{$title =='testimonial' ? 'active':''}}"><a href="{{ route('testimonia') }}">Testimonials</a></li>
           <!-- <li><a href="pricing.html">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="{{ route('contact') }}">Contact</a></li>
+          <li class="{{$title =='contact' ? 'active':''}}"><a href="{{ route('contact') }}">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -112,7 +112,7 @@
             59200 Kuala Lumpur<br>
               Malaysia<br><br>
               <strong>Phone:</strong> +06 1698082232<br>
-              <strong>Email:</strong> Backant@gmail.com<br>
+              <strong>Email:</strong> ReadingBar0221@gmail.com<br>
             </p>
           </div>
 
@@ -157,7 +157,7 @@
           &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="">BackAnt</a>
+          Designed by <a href="">Reading Bar</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
